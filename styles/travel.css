@@ -3,21 +3,37 @@
 
 /* Shared Styles */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
 }
 
-.main-title{
-    font-size: 2.5rem;
-    font-weight: 800;
+.container {
+    width: 80%;
+    max-width: 1200px;
+    /* min-height: 300px; */
+    margin: 0 auto;
+    background-color: #FFF;
 }
 
-.main-des{
+.sec-top {
+    margin-top: 100px;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #131318;
+}
+
+.main-des {
     font-size: 1rem;
     font-weight: 400;
+    color: rgba(19, 19, 24, 0.70);
+    margin-top: 24px;
+    line-height: 1.625rem;
 }
 
 .btn-primary {
@@ -25,7 +41,6 @@
     color: #FFF;
     font-size: 1.25rem;
     background: #FF5400;
-    /* padding: 20px 25px; */
     cursor: pointer;
     border: 0;
     font-weight: 800;
@@ -33,3 +48,191 @@
 
 
 /* header styles */
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.nav-left {
+    display: flex;
+    width: 53%;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-right {
+    display: flex;
+    width: 43%;
+    justify-content: space-between;
+}
+
+.nav-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #131318;
+}
+
+.special {
+    color: #FF5400;
+}
+
+.nav-right>a {
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #424247;
+}
+
+#active {
+    color: #FF5400;
+    font-weight: 700;
+}
+
+/* Banner styles */
+
+#banner {
+    background: rgba(0, 0, 0, 0.4) url('../images/Group-13.png');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    border-radius: 10px;
+}
+
+.banner-content {
+    color: #FFF;
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 800;
+    padding-top: 100px;
+}
+
+#banner p {
+    padding: 24px 50px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFF;
+}
+
+#banner form {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    background-color: rgba(255, 255, 255, 0.30);
+    padding: 16px;
+    margin-top: 16px;
+}
+
+#banner form input,
+#banner form select,
+#banner form button {
+    width: 25%;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#banner form input,
+#banner form select{
+    padding-left: 16px;
+    font-weight: 400;
+    color: rgba(19, 19, 24, 0.50);
+}
+
+#banner form button {
+    background-color: #FF5400;
+    color: #FFF;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+/* Extra css for select tag dropdown Start */
+
+/*
+.select-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border: 2px solid red;
+    min-width: 50px;
+    height: 50px;
+}
+.select-box{
+    border: none;
+    appearance: none;
+    padding: 0 30px 0 15px;
+    width: 80%;
+    color: white;
+    background-color: aqua;
+    font-size: 20px;
+}
+
+.icon-container{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+.icon-container i{
+    font-size: 30px;
+    color: white;
+}
+*/
+
+/* Extra css for select tag dropdown End */
+
+
+/* Main Section Styles Start*/
+
+/* Popular Tours styles */
+.popular-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-container{
+    width: 48%;
+}
+
+.text-container{
+    width: 48%;
+    padding-right: 20px;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    max-height: 550px;
+    max-width: 580px;
+}
+
+.popular-list{
+    margin-left: 18px;
+}
+
+.popular-list li{
+    margin-top: 16px;
+}
+
+.popular-btn{
+    margin-top: 28px;
+    padding: 15px 35px;
+}
