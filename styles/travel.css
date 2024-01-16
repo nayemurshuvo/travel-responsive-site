@@ -183,7 +183,7 @@ nav {
     max-width: 580px;
 }
 
-.popular-list {
+.popular-list, .simple-list {
     margin-left: 18px;
 }
 
@@ -420,6 +420,21 @@ nav {
 .deals-last-btn .last-btn {
     padding: 15px 22px;
     margin-top: 24px;
+}
+
+/* simple place style */
+.video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid #000;
+}
+
+.simple-list{
+    color: #131318;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.625rem;
 }
 
 /* Newsletter Styles */
