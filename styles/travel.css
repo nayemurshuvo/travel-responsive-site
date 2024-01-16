@@ -240,6 +240,7 @@ nav {
 /* Destation section styles */
 
 .destination-content,
+.deals-content,
 .choose-content {
     max-width: 640px;
     margin: 0 auto;
@@ -327,6 +328,7 @@ nav {
     height: 64px;
 }
 
+.deals-banner-container .deals-title,
 .card-item .card-title,
 .newsletter-form .news-title {
     font-size: 1.5rem;
@@ -335,10 +337,13 @@ nav {
     margin-top: 28px;
 }
 
-.card-item .main-des,
+.deals-banner-container .deals-des,
+.card-item .card-des,
 .newsletter-form .news-des {
     margin-top: 16px;
     color: #5A5A5D;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 .card-container .card-item-1 {
@@ -356,6 +361,87 @@ nav {
     border-radius: 16px;
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
+}
+
+/* Deals styles */
+.deals-banner-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.deals-banner {
+    width: 100%;
+    position: relative;
+}
+
+.deals-banner .back-img {
+    width: 100%;
+}
+
+.deals-content .main-des{
+    margin-bottom: 48px;
+}
+
+.deals-div {
+    padding-left: 50px;
+    padding-top: 50px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background-color: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    max-width: 580px;
+    position: absolute;
+    right: 60px;
+    top: 60px;
+}
+
+.deals-div-2 {
+    padding-left: 50px;
+    padding-top: 50px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background-color: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    max-width: 580px;
+    position: absolute;
+    left: 60px;
+    top: 60px;
+}
+
+.deals-div .deals-top, .deals-div-2 .deals-top  {
+    display: flex;
+    gap: 24px;
+}
+
+.deals-top i {
+    color: #FF5400;
+}
+
+.deals-price {
+    color: #FF5400;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-top: 16px;
+}
+.deals-btn{
+    padding: 15px 25px;
+    margin-top: 24px;
+    margin-bottom: 65px;
+}
+
+.deals-des{
+    padding-right: 70px;
+}
+
+.deals-last-btn{
+    display: flex;
+    justify-content: center;  
+}
+
+.deals-last-btn .last-btn{
+    padding: 15px 22px;
+    margin-top: 24px;
 }
 
 /* Newsletter Styles */
@@ -430,6 +516,9 @@ nav {
 .newsletter-hr {
     margin-top: 24px;
     margin-bottom: 24px;
+    border: 0;
+    height: 0;
+    border: 1px solid rgba(19, 19, 24, 0.10);
 }
 
 /* Footer Styles */
@@ -478,9 +567,12 @@ footer .footer-title {
 
 .footer-hr {
     margin: 50px 0;
+    border: 0;
+    height: 0;
+    border: 1px solid rgba(19, 19, 24, 0.10);
 }
 
-.lowest{
+.lowest {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     font-weight: 300;
