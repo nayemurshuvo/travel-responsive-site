@@ -138,7 +138,7 @@ nav {
 #banner form button {
     width: 25%;
     font-size: 1rem;
-    border-radius: 5px;
+    border-radius: 8px;
     border: none;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -364,7 +364,7 @@ nav {
 }
 
 /* Deals styles */
-.deals-banner-container{
+.deals-banner-container {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -379,7 +379,7 @@ nav {
     width: 100%;
 }
 
-.deals-content .main-des{
+.deals-content .main-des {
     margin-bottom: 48px;
 }
 
@@ -409,7 +409,8 @@ nav {
     top: 60px;
 }
 
-.deals-div .deals-top, .deals-div-2 .deals-top  {
+.deals-div .deals-top,
+.deals-div-2 .deals-top {
     display: flex;
     gap: 24px;
 }
@@ -424,22 +425,23 @@ nav {
     font-weight: 800;
     margin-top: 16px;
 }
-.deals-btn{
+
+.deals-btn {
     padding: 15px 25px;
     margin-top: 24px;
     margin-bottom: 65px;
 }
 
-.deals-des{
+.deals-des {
     padding-right: 70px;
 }
 
-.deals-last-btn{
+.deals-last-btn {
     display: flex;
-    justify-content: center;  
+    justify-content: center;
 }
 
-.deals-last-btn .last-btn{
+.deals-last-btn .last-btn {
     padding: 15px 22px;
     margin-top: 24px;
 }
@@ -577,4 +579,60 @@ footer .footer-title {
     font-size: 1rem;
     font-weight: 300;
     padding-bottom: 110px;
+}
+
+.hide {
+    display: none;
+}
+
+/* Responsive for mobile */
+
+@media only screen and (max-width: 576px) {
+    #banner form {
+        flex-direction: column;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .banner-title {
+        padding-top: 30px;
+        font-size: 1.375rem;
+    }
+
+    #banner p {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+    }
+
+    #banner form input,
+    #banner form select,
+    #banner form button {
+        width: 100%;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: none;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+    }
+
+    .nav-right {
+        display: none;
+    }
+    .nav-title{
+        font-size: 1.3rem;
+    }
+    .nav-left img{
+        width: 30px;
+        height: 34px;
+    }
+    .nav-mob{
+        display: inline;
+    }
+    .nav-mob i{
+        width: 24px;
+        height: 24px;
+    }
+
 }
